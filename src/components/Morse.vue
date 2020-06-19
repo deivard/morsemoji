@@ -13,7 +13,7 @@
     </div>
     <div class="m-3">
       <button @click="copyText" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded mx-2">Copy</button>
-      <button @click="autoDecode" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded mx-2 mt-1" :disabled="!enableDecodeButton" :class="{ disabledButton: !enableDecodeButton }" >Auto decode</button>
+      <button @click="autoDecode" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded mx-2 mt-1" :class="{ disabledButton: !enableDecodeButton }" >Auto decode</button>
       <button @click="clearText" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded mx-2">Clear</button>
     </div>
     <div>
@@ -282,6 +282,7 @@ export default {
   opacity: 50%;
   /* cursor:not-allowed; */
   background-color: lightgray !important;
+  pointer-events: none;
   
 }
 .disabledButton:hover{
