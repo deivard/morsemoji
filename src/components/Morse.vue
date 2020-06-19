@@ -279,7 +279,7 @@ export default {
 <style>
 
 .disabledButton {
-  opacity: 50%;
+  opacity: 0.5;
   /* cursor:not-allowed; */
   background-color: lightgray !important;
   pointer-events: none;
