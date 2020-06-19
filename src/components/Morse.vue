@@ -283,10 +283,6 @@ export default {
   /* cursor:not-allowed; */
   background-color: lightgray !important;
   pointer-events: none;
-  
-}
-.disabledButton:hover{
-
 }
 
 </style>
